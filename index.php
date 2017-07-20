@@ -190,7 +190,7 @@
 	updateCallList($result_list,$mysql);
 	$currentListName = generateExcelFile($result_list,$params);
 	
-	sendMailWithAttach($currentListName,$params);
+	//sendMailWithAttach($currentListName,$params);
 	
 	
 	

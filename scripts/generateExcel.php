@@ -14,10 +14,10 @@ function generateExcelFile($info_list,$params)
 	$objPHPExcel->getActiveSheet()->fromArray($info_list, NULL, 'A2');
 	$objPHPExcel->getActiveSheet()->setCellValue('A1', 'ConstituentID');
 	$objPHPExcel->getActiveSheet()->setCellValue('B1', 'TransactiondID');
-	$objPHPExcel->getActiveSheet()->setCellValue('C1', iconv("CP1251","UTF-8",'Дата последнего неудачного списания'));
-	$objPHPExcel->getActiveSheet()->setCellValue('D1', iconv("CP1251","UTF-8",'Сумма'));
-	$objPHPExcel->getActiveSheet()->setCellValue('E1', iconv("CP1251","UTF-8",'Фамилия'));
-	$objPHPExcel->getActiveSheet()->setCellValue('F1', iconv("CP1251","UTF-8",'Телефон'));
+	$objPHPExcel->getActiveSheet()->setCellValue('C1','Дата последнего неудачного списания');
+	$objPHPExcel->getActiveSheet()->setCellValue('D1', 'Сумма');
+	$objPHPExcel->getActiveSheet()->setCellValue('E1', 'Фамилия');
+	$objPHPExcel->getActiveSheet()->setCellValue('F1', 'Телефон');
 	
 	
 	$objPHPExcel->getActiveSheet()->getProtection()->setPassword($params["excel_password"]);
