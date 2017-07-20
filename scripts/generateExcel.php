@@ -14,10 +14,10 @@ function generateExcelFile($info_list,$params)
 	$objPHPExcel->getActiveSheet()->fromArray($info_list, NULL, 'A2');
 	$objPHPExcel->getActiveSheet()->setCellValue('A1', 'ConstituentID');
 	$objPHPExcel->getActiveSheet()->setCellValue('B1', 'TransactiondID');
-	$objPHPExcel->getActiveSheet()->setCellValue('C1', iconv("CP1251","UTF-8",'Äàòà ïîñëåäíåãî íåóäà÷íîãî ñïèñàíèÿ'));
-	$objPHPExcel->getActiveSheet()->setCellValue('D1', iconv("CP1251","UTF-8",'Ñóììà'));
-	$objPHPExcel->getActiveSheet()->setCellValue('E1', iconv("CP1251","UTF-8",'Ôàìèëèÿ'));
-	$objPHPExcel->getActiveSheet()->setCellValue('F1', iconv("CP1251","UTF-8",'Òåëåôîí'));
+	$objPHPExcel->getActiveSheet()->setCellValue('C1', iconv("CP1251","UTF-8",'Ð”Ð°Ñ‚Ð° Ð¿Ð¾ÑÐ»ÐµÐ´Ð½ÐµÐ³Ð¾ Ð½ÐµÑƒÐ´Ð°Ñ‡Ð½Ð¾Ð³Ð¾ ÑÐ¿Ð¸ÑÐ°Ð½Ð¸Ñ'));
+	$objPHPExcel->getActiveSheet()->setCellValue('D1', iconv("CP1251","UTF-8",'Ð¡ÑƒÐ¼Ð¼Ð°'));
+	$objPHPExcel->getActiveSheet()->setCellValue('E1', iconv("CP1251","UTF-8",'Ð¤Ð°Ð¼Ð¸Ð»Ð¸Ñ'));
+	$objPHPExcel->getActiveSheet()->setCellValue('F1', iconv("CP1251","UTF-8",'Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½'));
 	
 	
 	$objPHPExcel->getActiveSheet()->getProtection()->setPassword($params["excel_password"]);
