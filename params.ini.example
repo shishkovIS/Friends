@@ -1,0 +1,25 @@
+
+access_db_path = "<Path to MS Access DB>"
+access_encoding = "cp1251"
+
+prompt_date = "12-04-2017" 
+
+filepath = "lists/"
+filename = "info_list_"
+
+excel_password = "Password"
+
+mail_host = "smtp.gmail.com"
+mail_port = "587"
+mail_username = "<mail_username>"
+mail_password = "<mail_password>"
+mail_set_from = "<from>"
+mail_subject = "Subject"
+mail_body = "Body"
+mail_fullpath = "<path_to_index_file>"
+mail_receiver = "abc@def.ru"
+
+
+mysql_host = "mysql:host=localhost;dbname=Friends"
+mysql_user = "user"
+mysql_password = "password"
